@@ -54,13 +54,13 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 <center><img src="./test_images/test6.jpg"></center>
 
 <Undistored>
-<center><img src="./output_images/test6_undist.jpg"></center>
+<center><img src="./output_images/undist_test6.jpg"></center>
 
 ### 2) Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at ln[7]~ln[9] in `Advanced-Lane-Lines.ipython`).  Here's an example of my output for this step.  
 
-<center><img src="./output_images/test6_binary.jpg"></center>
+<center><img src="./output_images/binary_test6.jpg"></center>
 
 ### 3) Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -88,7 +88,7 @@ This resulted in the following source and destination points:
 
 I verified that my perspective transform was working as expected by drawing the `src` and `dst` points onto a test image and its warped counterpart to verify that the lines appear parallel in the warped image.
 
-<center><img src="./output_images/test6_unwarped.jpg"></center>
+<center><img src="./output_images/unwarped_test6.jpg"></center>
 
 ### 4) Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
 
@@ -108,7 +108,7 @@ I did this in lines 98 through 110 in my code ln [23] in  `Advanced-Lane-Lines.i
 
 I implemented this step in lines ln[23]  in my code in `Advanced-Lane-Lines.ipython` in the function `line_detect()`.  Here is an example of my result on a test image:
 
-<center><img src="./output_images/test6_result.jpg"></center>
+<center><img src="./output_images/result_test6.jpg"></center>
 
 ---
 
